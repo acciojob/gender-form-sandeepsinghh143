@@ -18,11 +18,11 @@ const Gender = ()=>{
         <div>
            <div>
             <h2>Select your gender:</h2>
-            <input type="radio" value="male" name="gender" onClick={genderValue}/>Male
-            <input type="radio" value="female" name="gender" onClick={genderValue}/>Female
+            <input type="radio" value="male" name="gender" onClick={genderValue}/><label>Male</label>
+            <input type="radio" value="female" name="gender" onClick={genderValue}/><label>Female</label>
            </div>
 
-           <h2>Select your {item[1]} size</h2>
+           <h2>Select your {item[1]} size:</h2>
            {item[0]==="male" &&
             <select>
                 <option>Select size</option>
